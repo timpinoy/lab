@@ -1,0 +1,4 @@
+#!/bin/bash
+name="${1:-world}"
+log_level="${LOG_LEVEL:-info}"
+echo "Hello, $name (log: $log_level)"

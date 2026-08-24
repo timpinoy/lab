@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for file in * .*; do
+	[[ "$file" == .* ]] && continue
+	[[ -f "$file" ]] || continue
+	echo "Processing: $file"
+done

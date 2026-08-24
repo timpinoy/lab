@@ -1,0 +1,9 @@
+#!/bin/bash
+
+get_extension() {
+	local filename="$1"
+	echo "${filename##*.}"
+}
+
+ext=$(get_extension "document.txt")
+echo "$ext"

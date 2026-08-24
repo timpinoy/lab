@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Description: check if parameter passed in is a file or a directory
+
+
+if [[ -f "$1" ]]; then
+	echo "It's a file"
+elif [[ -d "$1" ]]; then
+	echo "It's a directory"
+else
+	echo "Not found: $1"
+fi

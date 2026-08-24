@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# AND - both must be true
+if [[ -f "$1" && -r "$1" ]]; then
+	echo "File exists and is readable"
+fi
+
+# OR - either can be true
+if [[ -z "$1" || "$1" == "--help" ]]; then
+	echo "Usage: $0 <filename>"
+fi
+
+# NOT - invert the condition
+if [[ ! -f "$1" ]]; then
+	echo "Not a file: $1"
+fi

@@ -1,0 +1,22 @@
+#!/bin/bash
+# Generate a status page with system info
+
+cat << EOF
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Server Status</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    .status { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Server Status</h1>
+  <p class="status">Online</p>
+  <p>Built: $(date)</p>
+  <p>Build Host: $(hostname)</p>
+</body>
+</html>
+EOF

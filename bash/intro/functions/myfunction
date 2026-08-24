@@ -1,0 +1,9 @@
+#!/bin/bash
+
+my_function() {
+	name="Changed"
+}
+
+name="Original"
+my_function
+echo "$name"

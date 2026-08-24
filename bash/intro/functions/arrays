@@ -1,0 +1,16 @@
+#!/bin/bash
+
+fruits=("apple" "banana" "orange")
+
+echo "${fruits[0]}"
+
+echo "${fruits[@]}"
+
+echo "${#fruits[@]}"
+
+fruits+=("grape")
+
+
+for fruit in "${fruits[@]}"; do
+	echo "I like $fruit"
+done
